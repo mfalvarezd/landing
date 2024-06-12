@@ -137,10 +137,10 @@ function procesarDatos(datos) {
 
   // Creamos las filas de la tabla usando los datos procesados
   const rows = Object.keys(counts).map(
-    (userType) => `
+    (tipo) => `
       <tr>
-          <td>${userType}</td>
-          <td>${counts[userType]}</td>
+          <td>${tipo}</td>
+          <td>${counts[tipo]}</td>
       </tr>
   `
   );
@@ -150,7 +150,7 @@ function procesarDatos(datos) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  obtenerDatos();
+    
 });
 
 window.addEventListener("DOMContentLoaded", loaded);
