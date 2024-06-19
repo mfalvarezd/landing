@@ -1,3 +1,11 @@
+document.getElementById('personaje-favorito').addEventListener('change', function() {
+    var otroPersonaje = document.getElementById('otro-personaje');
+    if (this.value === 'Otros') {
+      otroPersonaje.style.display = 'block';
+    } else {
+      otroPersonaje.style.display = 'none';
+    }
+  });
 (function() {
 	'use strict';
 
